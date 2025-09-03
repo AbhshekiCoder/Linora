@@ -1,14 +1,14 @@
 // src/App.js
 import React, { useState } from 'react';
 import { FaBox, FaTags, FaImage, FaQuoteRight, FaTicketAlt, FaAd, FaShoppingBag, FaCog, FaSignOutAlt, FaBars } from 'react-icons/fa';
-import ProductManagement from '../components/ProductManagement';
-import OrdersManagement from '../components/OrdersManagement';
-import CouponManagement from '../components/CouponManagement';
-import AdsManagement from '../components/AdsManagement';
-import CarouselManagement from '../components/CarouselManagement';
-import QuotesManagement from '../components/QuotesManagement';
-import OtherImagesManagement from '../components/OtherImagesManagement';
-import Settings from '../components/Settings';
+import ProductManagement from './admin/ProductManagement';
+import OrdersManagement from './admin/OrdersManagement';
+import CouponManagement from './admin/CouponManagement';
+import AdsManagement from './admin/AdsManagement';
+import CarouselManagement from './admin/CarouselManagement';
+import QuotesManagement from './admin/QuotesManagement';
+import OtherImagesManagement from './admin/OtherImagesManagement';
+import Settings from './admin/Settings';
 
 function Admin() {
   const [activeTab, setActiveTab] = useState('products');

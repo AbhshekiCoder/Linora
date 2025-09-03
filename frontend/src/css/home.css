@@ -1,0 +1,88 @@
+/* home.css */
+.swiper-button-next-custom::after,
+.swiper-button-prev-custom::after {
+  content: none !important;
+}
+
+.mySwiper {
+  position: relative;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3 !important;
+  cursor: not-allowed;
+}
+
+/* Smooth fade transition */
+.swiper-slide {
+  transition: opacity 800ms ease-in-out !important;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+}
+.category-slider{
+
+  margin: auto;
+  
+  overflow-x: scroll;
+  padding: 20px;
+  
+}
+.category-slider>div{
+  min-width: 300px;
+  height: 400px;
+  margin-right: 30px;
+  border: solid 2px;
+}
+.category-slider>div>img{
+  width: 300px;
+  height: 400px;
+  margin-right: 30px;
+}
+/* Custom thin and minimal scrollbar */
+.category-slider::-webkit-scrollbar {
+  /* ultra thin like progress bar */
+  height: 4px;
+
+}
+
+.category-slider::-webkit-scrollbar-track {
+  background: transparent; /* hides the track */
+  margin-left: 10px;
+  margin-right: 10px; /* removes scroll thumb edges like arrows */
+  background-color: #e5e7eb;
+  
+}
+
+.category-slider::-webkit-scrollbar-thumb {
+  background: gray; /* scrollbar thumb color */
+
+}
+
+.category-slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+ @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
